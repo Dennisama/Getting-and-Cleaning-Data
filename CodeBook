@@ -12,9 +12,10 @@ by data_feature, rename the column names of bind_data, then remove the redundant
 6.Read "activity_label.txt", then use descriptive activity names to name the activity name in the data set, and rename the column names 
 of activities, finally assign the result to renew bind_label.
 7.Rename the column names of bind_subject, bind the updated bind_data, bind_label and bind_subject together, which is the clean data we 
-are looking for. Write it out as "clean_data.txt" in current work directory, a 5.3 Mb text file.
-8.Set with the average of each variable for each activity and each subject, write it out as "mean_data.txt" in current work directory, a 
-0.1 Mb file.
+are looking for. Write it out as "clean_data.txt" (10299 x 68) in current work directory, a 5.3 Mb text file, whose first column is Subject
+is integer, second column Activity is factor, and the rest of columns are all numeric.
+8.Set with the average of each variable for each activity and each subject, write it out as "mean_data.txt" (180 x 68) in current work directory, a 
+0.1 Mb file, whose first column is Subject is integer, second column Activity is factor, and the rest of columns are all numeric.
 
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
 A full description is available at the site where the data was obtained:
