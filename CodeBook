@@ -2,15 +2,22 @@ This file contains all the variables and summaries I calculated, along with unit
 
 The run_analysis.R script performs the following steps to clean the data:
 1.Set your own work directory, then load the package dplyr, which is used for later data summarization.
-2.Read "x_train.txt","y_train.txt","subject_train.txt","x_test.txt","y_test.txt","subject_test.txt", then assign them to corresponding variables.
+2.Read "x_train.txt","y_train.txt","subject_train.txt","x_test.txt","y_test.txt","subject_test.txt", then assign them to corresponding 
+variables.
 3.Bind train and test data together, assign the result to following 3 variables, bind_data, bind_label and bind_subject.
 4.Read "features.txt", then assign it on data_feature. 
-5.Based on the written pattern of the mean and standard deviation, we search for corresponding indices on data_feature, then use indices to extract the measurements on the mean and standard deviation of each measurement. In accordance with descriptive variable names given by data_feature, rename the column names of bind_data, then remove the redundant parenthensis "()" included in the names.
-6.Read "activity_label.txt", then use descriptive activity names to name the activity name in the data set, and rename the column names of activities, finally assign the result to renew bind_label.
-7.Rename the column names of bind_subject, bind the updated bind_data, bind_label and bind_subject together, which is the clean data we are looking for. Write it out as "clean_data.txt" in current work directory, a 5.3 Mb text file.
-8.Set with the average of each variable for each activity and each subject, write it out as "mean_data.txt" in current work directory, a 0.1 Mb file.
+5.Based on the written pattern of the mean and standard deviation, we search for corresponding indices on data_feature, then use indices 
+to extract the measurements on the mean and standard deviation of each measurement. In accordance with descriptive variable names given 
+by data_feature, rename the column names of bind_data, then remove the redundant parenthensis "()" included in the names.
+6.Read "activity_label.txt", then use descriptive activity names to name the activity name in the data set, and rename the column names 
+of activities, finally assign the result to renew bind_label.
+7.Rename the column names of bind_subject, bind the updated bind_data, bind_label and bind_subject together, which is the clean data we 
+are looking for. Write it out as "clean_data.txt" in current work directory, a 5.3 Mb text file.
+8.Set with the average of each variable for each activity and each subject, write it out as "mean_data.txt" in current work directory, a 
+0.1 Mb file.
 
-The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
+A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
