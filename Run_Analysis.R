@@ -12,7 +12,7 @@ test_subject=read.table("test/subject_test.txt")
 bind_data=rbind(train_data,test_data)
 bind_label=rbind(train_label,test_label)
 bind_subject=rbind(train_subject,test_subject)
-#Haha
+
 #2.Extracts only the measurements on the mean and standard deviation
 #for each measurement.
 data_feature=read.table("features.txt")
